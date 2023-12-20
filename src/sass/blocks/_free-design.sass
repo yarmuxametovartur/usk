@@ -1,0 +1,67 @@
+// Секция с бесплатным дизайном
+.free-design
+    // padding-top: 70px
+    padding-bottom: 70px
+    // background: url(../img/main/main-opacity-bg.png) no-repeat
+    background-position: center right
+    background-size: cover
+    position: relative
+    &::before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background: $white
+    &-body
+        position: relative
+.section-header
+    padding-top: 70px
+    padding-bottom: 25px
+    font-size: 24px
+    font-weight: 600
+.section-underheader
+    font-size: 16px
+    font-weight: 500
+.main-form
+    padding-top: 30px
+.form-input
+    width: 40.7%
+    display: inline-block
+    margin-bottom: 30px
+    padding: 20px
+    border-radius: 8px
+    border: 1px solid $darkGrey
+    font-size: 15px
+    &:focus
+        outline-color: $lightYellow
+.form-btn
+    display: block
+    width: 82%
+    margin-bottom: 30px
+.form-text
+    font-size: 15px
+.form-tel
+    font-size: 15px!important
+
+
+.bg-ex-parallax 
+  background: url(../img/main/parallax-bg.jpg) ///* Путь к картинке */
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  position: relative
+  padding-bottom: 70px
+
+.bg-ex-parallax .parallax-overlay 
+  position: absolute
+  width: 65.5%
+  height: 115%
+  margin-left: 50%
+  background: rgba(255, 255, 255, 0.6) ///* Прозрачность */
+  z-index: 2
+
+.bg-ex-parallax span 
+    z-index: 3

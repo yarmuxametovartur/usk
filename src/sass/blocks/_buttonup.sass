@@ -1,0 +1,40 @@
+// Кнопка вверх
+#button 
+  display: inline-block
+  background-color: $lightYellow
+  text-decoration: none
+  width: 50px
+  height: 50px
+  text-align: center
+  border-radius: 4px
+  position: fixed
+  bottom: 30px
+  right: 30px
+  transition: background-color .3s, opacity .5s, visibility .5s
+  opacity: 0
+  visibility: hidden
+  z-index: 1000
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+
+#button::after 
+  content: "\f077"
+  font-family: FontAwesome
+  font-weight: normal
+  font-style: normal
+  font-size: 2em
+  line-height: 50px
+  color: $white
+
+#button:hover 
+  cursor: pointer
+  background-color: $darkYellow
+
+#button:active 
+  background-color: $darkYellow
+
+#button.show 
+  opacity: 1
+  visibility: visible
+
